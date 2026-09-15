@@ -1,4 +1,4 @@
-// blackjack1 - main.c gerado por V13
+// blackjack1 - main.c gerado por V14
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,47 +16,79 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (auto-detectados)
+// Tipos J2ME (auto-detectados, dedup)
+typedef void* Alert;
+typedef void* AlertType;
 typedef void* Boolean;
 typedef void* Byte;
+typedef void* ByteArrayInputStream;
+typedef void* ByteArrayOutputStream;
+typedef void* Calendar;
 typedef void* Canvas;
 typedef void* Character;
+typedef void* ChoiceGroup;
 typedef void* Class_x;
 typedef void* Command;
 typedef void* CommandListener;
+typedef void* Control;
 typedef void* DataInputStream;
+typedef void* DataOutputStream;
+typedef void* Date;
+typedef void* DateField;
+typedef void* DeviceControl;
 typedef void* DirectGraphics;
 typedef void* Display;
 typedef void* Displayable;
 typedef void* Double_x;
+typedef void* Enumeration;
 typedef void* Exception;
 typedef void* Float_x;
 typedef void* Font;
 typedef void* Form;
 typedef void* FullCanvas;
 typedef void* GameCanvas;
+typedef void* Gauge;
 typedef void* Graphics;
+typedef void* Hashtable;
 typedef void* IOException;
 typedef void* Image;
+typedef void* ImageItem;
 typedef void* InputStream;
 typedef void* Integer;
 typedef void* InterruptedException;
+typedef void* Item;
+typedef void* Iterator;
 typedef void* List;
+typedef void* ListItem;
+typedef void* Locale;
 typedef void* Long_x;
 typedef void* MIDlet;
 typedef void* MIDletStateChangeException;
+typedef void* Manager;
 typedef void* Math;
 typedef void* Object;
 typedef void* OutputStream;
+typedef void* Player;
 typedef void* PrintStream;
+typedef void* Process;
+typedef void* Queue;
 typedef void* Random;
 typedef void* RecordStore;
+typedef void* Runtime;
+typedef void* Screen;
 typedef void* Short_x;
+typedef void* Sound;
+typedef void* Spacer;
+typedef void* Stack;
 typedef void* String;
 typedef void* StringBuffer;
+typedef void* StringTokenizer;
 typedef void* System;
+typedef void* TextBox;
 typedef void* TextField;
 typedef void* Thread;
+typedef void* Ticker;
+typedef void* TimeZone;
 typedef void* Timer;
 typedef void* TimerTask;
 typedef void* Vector;
@@ -98,47 +130,47 @@ struct Blackjack_a_s {
     int          do_x;
     int          a;
     int*         if_x;
-    Blackjack*   this_0;
+    void*        this_0;
 };
 
 struct Blackjack_b_s {
     int          do_x;
     int          if_x;
     int          a;
-    Blackjack*   this_0;
+    void*        this_0;
 };
 
 struct Blackjack_c_s {
-    Blackjack*   this_0;
+    void*        this_0;
 };
 
 struct Blackjack_d_s {
     int          if_x;
     int          a;
     int          do_x;
-    Blackjack*   this_0;
+    void*        this_0;
 };
 
 struct Blackjack_s {
-    Command*     at;
-    Command*     as;
-    Command*     try_x;
-    Command*     M;
-    Command*     char_x;
-    Command*     f;
-    Command*     Q;
-    Command*     ao;
-    Command*     v;
-    Display*     int_x;
-    Blackjack$c* P;
-    Blackjack$d* for_x;
-    Blackjack$b* d;
-    Image*       ak;
-    Image*       j;
-    Image*       y;
-    Image*       W;
-    Image*       al;
-    Image*       long_x;
+    void*        at;
+    void*        as;
+    void*        try_x;
+    void*        M;
+    void*        char_x;
+    void*        f;
+    void*        Q;
+    void*        ao;
+    void*        v;
+    void*        int_x;
+    void*        P;
+    void*        for_x;
+    void*        d;
+    void*        ak;
+    void*        j;
+    void*        y;
+    void*        W;
+    void*        al;
+    void*        long_x;
     int          Y;
     int          if_x;
     int          ab;
@@ -147,9 +179,9 @@ struct Blackjack_s {
     int          s;
     int          new_x;
     int          G;
-    Font*        ai;
-    Font*        an;
-    Font*        ah;
+    void*        ai;
+    void*        an;
+    void*        ah;
     int          R;
     int          l;
     int          O;
@@ -163,7 +195,7 @@ struct Blackjack_s {
     int          A;
     int          F;
     int          u;
-    String**     I;
+    void*        I;
     int*         H;
     int          af;
     int          V;
@@ -184,14 +216,14 @@ struct Blackjack_s {
     int          ac;
     int*         ap;
     int*         w;
-    String*      m;
-    String*      else_x;
+    void*        m;
+    void*        else_x;
     int          C;
     int          au;
     int**        ae;
     int**        ag;
-    Random*      case_x;
-    Blackjack$a* S;
+    void*        case_x;
+    void*        S;
     int*         b;
     int*         X;
     int          i;
@@ -199,12 +231,12 @@ struct Blackjack_s {
     int          g;
     int          N;
     int          k;
-    String*      q;
+    void*        q;
     int          L;
     int*         D;
     int          E;
     int**        n;
-    Image*       do_x;
+    void*        do_x;
     int          ar;
     int          x;
 };
