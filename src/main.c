@@ -1,4 +1,4 @@
-// blackjack1 - main.c gerado por V12
+// blackjack1 - main.c gerado por V13
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,58 +16,50 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (todos como void*)
-typedef void* Image;
-typedef void* Graphics;
-typedef void* DirectGraphics;
-typedef void* Font;
-typedef void* String;
-typedef void* StringBuffer;
+// Tipos J2ME (auto-detectados)
+typedef void* Boolean;
+typedef void* Byte;
+typedef void* Canvas;
+typedef void* Character;
+typedef void* Class_x;
 typedef void* Command;
+typedef void* CommandListener;
+typedef void* DataInputStream;
+typedef void* DirectGraphics;
 typedef void* Display;
 typedef void* Displayable;
-typedef void* Canvas;
+typedef void* Double_x;
+typedef void* Exception;
+typedef void* Float_x;
+typedef void* Font;
+typedef void* Form;
 typedef void* FullCanvas;
 typedef void* GameCanvas;
+typedef void* Graphics;
+typedef void* IOException;
+typedef void* Image;
+typedef void* InputStream;
+typedef void* Integer;
+typedef void* InterruptedException;
+typedef void* List;
+typedef void* Long_x;
+typedef void* MIDlet;
+typedef void* MIDletStateChangeException;
+typedef void* Math;
+typedef void* Object;
+typedef void* OutputStream;
+typedef void* PrintStream;
 typedef void* Random;
+typedef void* RecordStore;
+typedef void* Short_x;
+typedef void* String;
+typedef void* StringBuffer;
+typedef void* System;
+typedef void* TextField;
+typedef void* Thread;
 typedef void* Timer;
 typedef void* TimerTask;
 typedef void* Vector;
-typedef void* List;
-typedef void* Form;
-typedef void* TextField;
-typedef void* InputStream;
-typedef void* DataInputStream;
-typedef void* OutputStream;
-typedef void* RecordStore;
-typedef void* Thread;
-typedef void* MIDlet;
-typedef void* Object;
-typedef void* Class;
-typedef void* Math;
-typedef void* System;
-typedef void* Integer;
-typedef void* Long;
-typedef void* Short;
-typedef void* Byte;
-typedef void* Character;
-typedef void* Boolean;
-typedef void* Float;
-typedef void* Double;
-typedef void* Sound;
-typedef void* DeviceControl;
-typedef void* SpriteEvent;
-typedef void* SpriteListener;
-typedef void* SpriteAction;
-typedef void* MIDP;
-typedef void* SoundListener;
-typedef void* Player;
-typedef void* PlayerListener;
-typedef void* Control;
-typedef void* Manager;
-typedef void* DataInputStream2;
-typedef void* ByteArrayInputStream;
-typedef void* ByteArrayOutputStream;
 
 // Stubs de biblioteca
 void j2me_canvas_repaint(void) { }
@@ -75,7 +67,7 @@ void j2me_canvas_serviceRepaints(void) { }
 void j2me_gc(void) { }
 void* j2me_image_get_graphics(void* img) { return img; }
 
-// Forward typedefs das classes do projeto
+// Forward typedefs
 typedef struct Blackjack_a_s Blackjack_a;
 typedef struct Blackjack_a_s Blackjack_a_s;
 typedef struct Blackjack_b_s Blackjack_b;
@@ -130,7 +122,7 @@ struct Blackjack_d_s {
 struct Blackjack_s {
     Command*     at;
     Command*     as;
-    Command*     try;
+    Command*     try_x;
     Command*     M;
     Command*     char_x;
     Command*     f;
@@ -153,7 +145,7 @@ struct Blackjack_s {
     int          c;
     int          t;
     int          s;
-    int          new;
+    int          new_x;
     int          G;
     Font*        ai;
     Font*        an;
@@ -181,7 +173,7 @@ struct Blackjack_s {
     int          aj;
     int          void_x;
     int          goto_x;
-    int          null;
+    int          null_x;
     int          e;
     int          byte;
     int          am;
@@ -248,8 +240,8 @@ void Blackjack_o(void* self);
 void* Blackjack_if_x(void* self, int arg0);
 void Blackjack_a(void* self);
 int Blackjack_a_2(void* self, void* arg0, int arg1);
-void Blackjack_try(void* self);
-void Blackjack_new(void* self);
+void Blackjack_try_x(void* self);
+void Blackjack_new_x(void* self);
 void Blackjack_i(void* self);
 void Blackjack_c(void* self);
 void Blackjack_m(void* self);
@@ -264,7 +256,7 @@ void* Blackjack_a_3(void* self, void* arg0, int arg1);
 void* Blackjack_if_x_2(void* self, void* arg0);
 int Blackjack_a_4(void* self, void* arg0);
 int Blackjack_a_5(void* self, int arg0);
-void Blackjack_null(void* self);
+void Blackjack_null_x(void* self);
 void Blackjack_int_x(void* self);
 void Blackjack_s(void* self);
 void Blackjack_commandAction(void* self, void* arg0, void* arg1);
@@ -524,13 +516,13 @@ int Blackjack_a_2(void* self, void* arg0, int arg1) {
     return 0;
 }
 
-void Blackjack_try(void* self) {
+void Blackjack_try_x(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void Blackjack_new(void* self) {
+void Blackjack_new_x(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
@@ -624,7 +616,7 @@ int Blackjack_a_5(void* self, int arg0) {
     return 0;
 }
 
-void Blackjack_null(void* self) {
+void Blackjack_null_x(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
