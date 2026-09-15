@@ -1,0 +1,6725 @@
+{
+  "jar": "Blackjack1.jar",
+  "nome_projeto": "blackjack1",
+  "midlet": "Blackjack",
+  "canvas": "Blackjack$b",
+  "classes": [
+    {
+      "arquivo": "Blackjack$a.class",
+      "nome": "Blackjack$a",
+      "super": "Object",
+      "campos": [
+        {
+          "nome": "do",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "if",
+          "desc": "[Z",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "this$0",
+          "desc": "LBlackjack;",
+          "tipo_c": "Blackjack*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LBlackjack;I)V",
+          "tipo_ret": "void",
+          "n_instr": 9,
+          "apis": {
+            "java/lang/Thread.<init>": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "java/lang/Thread.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              7,
+              "putfield",
+              "Blackjack$a.do"
+            ]
+          ]
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 223,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.addCommand": 1
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              15,
+              5
+            ],
+            [
+              31,
+              3
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              54,
+              0
+            ],
+            [
+              56,
+              0
+            ],
+            [
+              66,
+              1
+            ],
+            [
+              70,
+              0
+            ],
+            [
+              72,
+              1
+            ],
+            [
+              92,
+              0
+            ],
+            [
+              109,
+              1
+            ],
+            [
+              121,
+              0
+            ],
+            [
+              148,
+              2
+            ],
+            [
+              166,
+              3
+            ],
+            [
+              191,
+              0
+            ],
+            [
+              193,
+              1
+            ],
+            [
+              195,
+              12
+            ],
+            [
+              203,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              140,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              9,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              13,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              19,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              21,
+              "putfield",
+              "Blackjack$a.a"
+            ],
+            [
+              24,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              26,
+              "putfield",
+              "Blackjack$a.if"
+            ],
+            [
+              29,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              36,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              38,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              44,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              47,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              52,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              60,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              63,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              68,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              76,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              84,
+              "getfield",
+              "Blackjack$a.this$0"
+            ],
+            [
+              86,
+              "putfield",
+              "Blackjack$a.a"
+            ],
+            [
+              89,
+              "getfield",
+              "Blackjack$a.this$0"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(J)V",
+          "tipo_ret": "void",
+          "n_instr": 5,
+          "apis": {
+            "java/lang/Thread.sleep": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "java/lang/Thread.sleep"
+            ]
+          ],
+          "fields": []
+        }
+      ],
+      "apis": {
+        "java/lang/Thread.<init>": 1,
+        "javax/microedition/lcdui/Displayable.addCommand": 1,
+        "java/lang/Thread.sleep": 1
+      },
+      "padroes": [
+        "TEM_RUN"
+      ]
+    },
+    {
+      "arquivo": "Blackjack$b.class",
+      "nome": "Blackjack$b",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "do",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "if",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "this$0",
+          "desc": "LBlackjack;",
+          "tipo_c": "Blackjack*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LBlackjack;)V",
+          "tipo_ret": "void",
+          "n_instr": 14,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1,
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ],
+            [
+              7,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              11,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              8,
+              "putfield",
+              "Blackjack$b.do"
+            ],
+            [
+              12,
+              "putfield",
+              "Blackjack$b.if"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 155,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 5,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.setFont": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 5,
+            "javax/microedition/lcdui/Graphics.fillRoundRect": 2,
+            "javax/microedition/lcdui/Graphics.drawString": 4
+          },
+          "constantes": [
+            [
+              1,
+              26112
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              25,
+              5
+            ],
+            [
+              28,
+              12
+            ],
+            [
+              30,
+              20
+            ],
+            [
+              37,
+              12
+            ],
+            [
+              40,
+              26
+            ],
+            [
+              42,
+              72
+            ],
+            [
+              43,
+              19
+            ],
+            [
+              44,
+              3
+            ],
+            [
+              45,
+              3
+            ],
+            [
+              49,
+              16
+            ],
+            [
+              59,
+              28
+            ],
+            [
+              61,
+              20
+            ],
+            [
+              69,
+              16
+            ],
+            [
+              72,
+              28
+            ],
+            [
+              74,
+              20
+            ],
+            [
+              82,
+              32
+            ],
+            [
+              85,
+              28
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              10,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              19,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              31,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              34,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              46,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              62,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              75,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              88,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              101,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              104,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              116,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              119,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              127,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              135,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              143,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              147,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              153,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              7,
+              "getfield",
+              "Blackjack$b.do"
+            ],
+            [
+              9,
+              "getfield",
+              "Blackjack$b.if"
+            ],
+            [
+              12,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              17,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              22,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              51,
+              "putfield",
+              "Blackjack$b.a"
+            ],
+            [
+              54,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              57,
+              "getfield",
+              "Blackjack$b.a"
+            ],
+            [
+              65,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              68,
+              "getfield",
+              "Blackjack$b.a"
+            ],
+            [
+              78,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              81,
+              "getfield",
+              "Blackjack$b.a"
+            ],
+            [
+              91,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              94,
+              "getfield",
+              "Blackjack$b.a"
+            ]
+          ]
+        },
+        {
+          "nome": "keyPressed",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 15,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [
+            [
+              5,
+              8
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              8,
+              "getfield",
+              "Blackjack$b.this$0"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack$b.this$0"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "javax/microedition/lcdui/Canvas.getWidth": 1,
+        "javax/microedition/lcdui/Canvas.getHeight": 1,
+        "javax/microedition/lcdui/Graphics.setColor": 5,
+        "javax/microedition/lcdui/Graphics.fillRect": 1,
+        "javax/microedition/lcdui/Graphics.setFont": 1,
+        "javax/microedition/lcdui/Graphics.drawImage": 5,
+        "javax/microedition/lcdui/Graphics.fillRoundRect": 2,
+        "javax/microedition/lcdui/Graphics.drawString": 4,
+        "javax/microedition/lcdui/Canvas.getGameAction": 1,
+        "javax/microedition/lcdui/Display.setCurrent": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_INPUT"
+      ]
+    },
+    {
+      "arquivo": "Blackjack$c.class",
+      "nome": "Blackjack$c",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "this$0",
+          "desc": "LBlackjack;",
+          "tipo_c": "Blackjack*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LBlackjack;)V",
+          "tipo_ret": "void",
+          "n_instr": 6,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "Blackjack$c.this$0"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 297,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 5,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.fillRoundRect": 3,
+            "javax/microedition/lcdui/Graphics.setFont": 3,
+            "javax/microedition/lcdui/Graphics.drawString": 4,
+            "java/lang/StringBuffer.<init>": 3,
+            "java/lang/StringBuffer.append": 6,
+            "java/lang/StringBuffer.toString": 3
+          },
+          "constantes": [
+            [
+              1,
+              26112
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              17,
+              3
+            ],
+            [
+              19,
+              92
+            ],
+            [
+              20,
+              36
+            ],
+            [
+              21,
+              3
+            ],
+            [
+              22,
+              3
+            ],
+            [
+              26,
+              2
+            ],
+            [
+              29,
+              42
+            ],
+            [
+              31,
+              92
+            ],
+            [
+              32,
+              36
+            ],
+            [
+              33,
+              3
+            ],
+            [
+              34,
+              3
+            ],
+            [
+              38,
+              2
+            ],
+            [
+              41,
+              81
+            ],
+            [
+              43,
+              92
+            ],
+            [
+              44,
+              16
+            ],
+            [
+              45,
+              3
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              8,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              11,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              35,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              47,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              52,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              55,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              63,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              71,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              121,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              132,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              135,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              139,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              141,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              145,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              146,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              154,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              157,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              161,
+              "java/lang/StringBuffer.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              50,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              75,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              78,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              81,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              90,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              93,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              96,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              103,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              114,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              119,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              130,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              143,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              165,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              181,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              186,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              197,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              206,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              211,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              220,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              230,
+              "getfield",
+              "Blackjack$c.this$0"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;[[II[ZI)V",
+          "tipo_ret": "void",
+          "n_instr": 90,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setFont": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 2,
+            "javax/microedition/lcdui/Graphics.drawString": 1
+          },
+          "constantes": [
+            [
+              8,
+              4
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              47,
+              0
+            ],
+            [
+              56,
+              1
+            ],
+            [
+              62,
+              8
+            ],
+            [
+              65,
+              16
+            ],
+            [
+              67,
+              17
+            ],
+            [
+              82,
+              18
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              19,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              48,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              68,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              21,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              29,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              39,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              42,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              51,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              60,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              73,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              76,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              81,
+              "getfield",
+              "Blackjack$c.this$0"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;II)V",
+          "tipo_ret": "void",
+          "n_instr": 19,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.fillRoundRect": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              3,
+              16
+            ],
+            [
+              4,
+              30
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              16,
+              20
+            ]
+          ],
+          "chamadas": [
+            [
+              7,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              17,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;II)V",
+          "tipo_ret": "void",
+          "n_instr": 33,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 2,
+            "javax/microedition/lcdui/Graphics.drawString": 2
+          },
+          "constantes": [
+            [
+              8,
+              96
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              13,
+              81
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              25,
+              4
+            ],
+            [
+              28,
+              81
+            ],
+            [
+              30,
+              20
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              16,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              19,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              31,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              5,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              22,
+              "getfield",
+              "Blackjack$c.this$0"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;IILjava/lang/String;)V",
+          "tipo_ret": "void",
+          "n_instr": 27,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 2,
+            "javax/microedition/lcdui/Graphics.fillRoundRect": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 1
+          },
+          "constantes": [
+            [
+              5,
+              2
+            ],
+            [
+              8,
+              81
+            ],
+            [
+              10,
+              92
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              22,
+              81
+            ],
+            [
+              24,
+              17
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              14,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              17,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              25,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "keyPressed",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 64,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1,
+            "javax/microedition/lcdui/Canvas.repaint": 2
+          },
+          "constantes": [
+            [
+              5,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              16,
+              51
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              23,
+              -1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              39,
+              6
+            ],
+            [
+              48,
+              1
+            ],
+            [
+              53,
+              1
+            ],
+            [
+              58,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ],
+            [
+              36,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              62,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              8,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              12,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              19,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              26,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              31,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              42,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              46,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              52,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              57,
+              "getfield",
+              "Blackjack$c.this$0"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "([[II)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 67,
+          "apis": {},
+          "constantes": [
+            [
+              8,
+              0
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              23,
+              0
+            ],
+            [
+              37,
+              0
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              52,
+              0
+            ],
+            [
+              54,
+              2
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              13,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              15,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              27,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              29,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              42,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              44,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              57,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              59,
+              "getfield",
+              "Blackjack$c.this$0"
+            ],
+            [
+              64,
+              "getfield",
+              "Blackjack$c.this$0"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "javax/microedition/lcdui/Graphics.setColor": 11,
+        "javax/microedition/lcdui/Graphics.fillRect": 1,
+        "javax/microedition/lcdui/Graphics.fillRoundRect": 5,
+        "javax/microedition/lcdui/Graphics.setFont": 4,
+        "javax/microedition/lcdui/Graphics.drawString": 8,
+        "java/lang/StringBuffer.<init>": 3,
+        "java/lang/StringBuffer.append": 6,
+        "java/lang/StringBuffer.toString": 3,
+        "javax/microedition/lcdui/Graphics.drawImage": 1,
+        "javax/microedition/lcdui/Canvas.getGameAction": 1,
+        "javax/microedition/lcdui/Canvas.repaint": 2
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_INPUT"
+      ]
+    },
+    {
+      "arquivo": "Blackjack$d.class",
+      "nome": "Blackjack$d",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "if",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "do",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "this$0",
+          "desc": "LBlackjack;",
+          "tipo_c": "Blackjack*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LBlackjack;)V",
+          "tipo_ret": "void",
+          "n_instr": 6,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "Blackjack$d.this$0"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 235,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 5,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.fillRoundRect": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 16,
+            "javax/microedition/lcdui/Graphics.drawLine": 2
+          },
+          "constantes": [
+            [
+              1,
+              26112
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              19,
+              92
+            ],
+            [
+              20,
+              96
+            ],
+            [
+              21,
+              8
+            ],
+            [
+              22,
+              8
+            ],
+            [
+              29,
+              6
+            ],
+            [
+              34,
+              96
+            ],
+            [
+              36,
+              4
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              50,
+              20
+            ],
+            [
+              58,
+              10
+            ],
+            [
+              60,
+              20
+            ],
+            [
+              68,
+              20
+            ],
+            [
+              70,
+              20
+            ],
+            [
+              78,
+              35
+            ],
+            [
+              80,
+              20
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              8,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              11,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/Graphics.fillRoundRect"
+            ],
+            [
+              26,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              51,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              61,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              71,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              81,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              91,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              101,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              111,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              121,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              124,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              132,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              142,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              152,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              162,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              172,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              182,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              31,
+              "putfield",
+              "Blackjack$d.if"
+            ],
+            [
+              38,
+              "putfield",
+              "Blackjack$d.a"
+            ],
+            [
+              43,
+              "putfield",
+              "Blackjack$d.do"
+            ],
+            [
+              47,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              49,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              55,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              57,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              65,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              67,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              75,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              77,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              85,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              87,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              95,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              97,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              105,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              107,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              115,
+              "getfield",
+              "Blackjack$d.if"
+            ],
+            [
+              117,
+              "getfield",
+              "Blackjack$d.do"
+            ],
+            [
+              128,
+              "getfield",
+              "Blackjack$d.a"
+            ]
+          ]
+        },
+        {
+          "nome": "keyPressed",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 15,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [
+            [
+              5,
+              8
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              8,
+              "getfield",
+              "Blackjack$d.this$0"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack$d.this$0"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "javax/microedition/lcdui/Graphics.setColor": 5,
+        "javax/microedition/lcdui/Graphics.fillRect": 1,
+        "javax/microedition/lcdui/Graphics.fillRoundRect": 1,
+        "javax/microedition/lcdui/Graphics.drawString": 16,
+        "javax/microedition/lcdui/Graphics.drawLine": 2,
+        "javax/microedition/lcdui/Canvas.getGameAction": 1,
+        "javax/microedition/lcdui/Display.setCurrent": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_INPUT"
+      ]
+    },
+    {
+      "arquivo": "Blackjack.class",
+      "nome": "Blackjack",
+      "super": "MIDlet",
+      "campos": [
+        {
+          "nome": "at",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "as",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "try",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "M",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "char",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "f",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "Q",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "ao",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "v",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "int",
+          "desc": "Ljavax/microedition/lcdui/Display;",
+          "tipo_c": "Display*"
+        },
+        {
+          "nome": "P",
+          "desc": "LBlackjack$c;",
+          "tipo_c": "Blackjack$c*"
+        },
+        {
+          "nome": "for",
+          "desc": "LBlackjack$d;",
+          "tipo_c": "Blackjack$d*"
+        },
+        {
+          "nome": "d",
+          "desc": "LBlackjack$b;",
+          "tipo_c": "Blackjack$b*"
+        },
+        {
+          "nome": "ak",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "j",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "y",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "W",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "al",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "long",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "Y",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "if",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ab",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "c",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "t",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "s",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "new",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "G",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ai",
+          "desc": "Ljavax/microedition/lcdui/Font;",
+          "tipo_c": "Font*"
+        },
+        {
+          "nome": "an",
+          "desc": "Ljavax/microedition/lcdui/Font;",
+          "tipo_c": "Font*"
+        },
+        {
+          "nome": "ah",
+          "desc": "Ljavax/microedition/lcdui/Font;",
+          "tipo_c": "Font*"
+        },
+        {
+          "nome": "R",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "l",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "O",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "B",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "h",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "a",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "U",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "z",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "p",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "Z",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "A",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "F",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "u",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "I",
+          "desc": "[Ljava/lang/String;",
+          "tipo_c": "String**"
+        },
+        {
+          "nome": "H",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "af",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "V",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "K",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ad",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "T",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aj",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "void",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "goto",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "null",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "e",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "byte",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "am",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "J",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aq",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "o",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "r",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ac",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ap",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "w",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "m",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "else",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "C",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "au",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ae",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "ag",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "case",
+          "desc": "Ljava/util/Random;",
+          "tipo_c": "Random*"
+        },
+        {
+          "nome": "S",
+          "desc": "LBlackjack$a;",
+          "tipo_c": "Blackjack$a*"
+        },
+        {
+          "nome": "b",
+          "desc": "[Z",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "X",
+          "desc": "[Z",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "i",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "aa",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "g",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "N",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "k",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "q",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "L",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "D",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "E",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "n",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "do",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "ar",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "x",
+          "desc": "I",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 395,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.<init>": 1,
+            "javax/microedition/lcdui/Font.getFont": 3,
+            "java/util/Random.<init>": 1,
+            "javax/microedition/lcdui/Display.getDisplay": 1,
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "javax/microedition/lcdui/Command.<init>": 9
+          },
+          "constantes": [
+            [
+              3,
+              96
+            ],
+            [
+              6,
+              100
+            ],
+            [
+              9,
+              64
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              15,
+              64
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              17,
+              0
+            ],
+            [
+              21,
+              64
+            ],
+            [
+              22,
+              0
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              30,
+              0
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              36,
+              2
+            ],
+            [
+              39,
+              3
+            ],
+            [
+              42,
+              4
+            ],
+            [
+              45,
+              5
+            ],
+            [
+              48,
+              6
+            ],
+            [
+              51,
+              7
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/midlet/MIDlet.<init>"
+            ],
+            [
+              12,
+              "javax/microedition/lcdui/Font.getFont"
+            ],
+            [
+              18,
+              "javax/microedition/lcdui/Font.getFont"
+            ],
+            [
+              24,
+              "javax/microedition/lcdui/Font.getFont"
+            ],
+            [
+              256,
+              "java/util/Random.<init>"
+            ],
+            [
+              268,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              290,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              294,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              328,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              336,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              344,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              352,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              360,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              368,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              376,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              384,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              392,
+              "javax/microedition/lcdui/Command.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "Blackjack.Y"
+            ],
+            [
+              7,
+              "putfield",
+              "Blackjack.if"
+            ],
+            [
+              13,
+              "putfield",
+              "Blackjack.ai"
+            ],
+            [
+              19,
+              "putfield",
+              "Blackjack.an"
+            ],
+            [
+              25,
+              "putfield",
+              "Blackjack.ah"
+            ],
+            [
+              28,
+              "putfield",
+              "Blackjack.R"
+            ],
+            [
+              31,
+              "putfield",
+              "Blackjack.l"
+            ],
+            [
+              34,
+              "putfield",
+              "Blackjack.O"
+            ],
+            [
+              37,
+              "putfield",
+              "Blackjack.B"
+            ],
+            [
+              40,
+              "putfield",
+              "Blackjack.h"
+            ],
+            [
+              43,
+              "putfield",
+              "Blackjack.a"
+            ],
+            [
+              46,
+              "putfield",
+              "Blackjack.U"
+            ],
+            [
+              49,
+              "putfield",
+              "Blackjack.z"
+            ],
+            [
+              52,
+              "putfield",
+              "Blackjack.p"
+            ],
+            [
+              55,
+              "putfield",
+              "Blackjack.Z"
+            ],
+            [
+              58,
+              "putfield",
+              "Blackjack.A"
+            ],
+            [
+              61,
+              "putfield",
+              "Blackjack.F"
+            ],
+            [
+              64,
+              "putfield",
+              "Blackjack.u"
+            ],
+            [
+              120,
+              "putfield",
+              "Blackjack.I"
+            ],
+            [
+              176,
+              "putfield",
+              "Blackjack.H"
+            ]
+          ]
+        },
+        {
+          "nome": "startApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 12,
+          "apis": {
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.int"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.d"
+            ]
+          ]
+        },
+        {
+          "nome": "pauseApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "destroyApp",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "for",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.repaint": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              2,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ]
+          ]
+        },
+        {
+          "nome": "byte",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              20
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.byte"
+            ],
+            [
+              5,
+              "putfield",
+              "Blackjack.am"
+            ]
+          ]
+        },
+        {
+          "nome": "void",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 32,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              25,
+              13
+            ],
+            [
+              29,
+              4
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              9,
+              "getfield",
+              "Blackjack.ae"
+            ],
+            [
+              16,
+              "getfield",
+              "Blackjack.ae"
+            ]
+          ]
+        },
+        {
+          "nome": "h",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 101,
+          "apis": {},
+          "constantes": [
+            [
+              2,
+              0
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              10,
+              -1
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              17,
+              -1
+            ],
+            [
+              23,
+              0
+            ],
+            [
+              24,
+              -1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              31,
+              -1
+            ],
+            [
+              36,
+              0
+            ],
+            [
+              41,
+              0
+            ],
+            [
+              45,
+              4
+            ],
+            [
+              49,
+              0
+            ],
+            [
+              52,
+              1
+            ],
+            [
+              53,
+              0
+            ],
+            [
+              59,
+              0
+            ],
+            [
+              62,
+              1
+            ],
+            [
+              63,
+              0
+            ],
+            [
+              74,
+              0
+            ],
+            [
+              77,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              6,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              13,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              20,
+              "getfield",
+              "Blackjack.aq"
+            ],
+            [
+              27,
+              "getfield",
+              "Blackjack.aq"
+            ],
+            [
+              34,
+              "getfield",
+              "Blackjack.X"
+            ],
+            [
+              39,
+              "getfield",
+              "Blackjack.b"
+            ],
+            [
+              48,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              51,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              58,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              61,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              69,
+              "putfield",
+              "Blackjack.m"
+            ],
+            [
+              72,
+              "putfield",
+              "Blackjack.else"
+            ],
+            [
+              75,
+              "putfield",
+              "Blackjack.ac"
+            ],
+            [
+              78,
+              "putfield",
+              "Blackjack.r"
+            ],
+            [
+              81,
+              "putfield",
+              "Blackjack.aa"
+            ],
+            [
+              84,
+              "putfield",
+              "Blackjack.k"
+            ],
+            [
+              87,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              90,
+              "putfield",
+              "Blackjack.am"
+            ],
+            [
+              93,
+              "putfield",
+              "Blackjack.J"
+            ],
+            [
+              96,
+              "putfield",
+              "Blackjack.g"
+            ]
+          ]
+        },
+        {
+          "nome": "l",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 9,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "o",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 258,
+          "apis": {
+            "javax/microedition/lcdui/Image.createImage": 2,
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1,
+            "javax/microedition/lcdui/Canvas.repaint": 1
+          },
+          "constantes": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              8,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              17,
+              0
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              20,
+              13
+            ],
+            [
+              23,
+              0
+            ],
+            [
+              25,
+              3
+            ],
+            [
+              26,
+              15
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              31,
+              0
+            ],
+            [
+              32,
+              14
+            ],
+            [
+              35,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              38,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              155,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              196,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              201,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              212,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              256,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              221,
+              "putfield",
+              "Blackjack.y"
+            ],
+            [
+              226,
+              "putfield",
+              "Blackjack.W"
+            ],
+            [
+              231,
+              "putfield",
+              "Blackjack.j"
+            ],
+            [
+              236,
+              "putfield",
+              "Blackjack.ak"
+            ],
+            [
+              241,
+              "putfield",
+              "Blackjack.al"
+            ],
+            [
+              246,
+              "putfield",
+              "Blackjack.long"
+            ],
+            [
+              253,
+              "putfield",
+              "Blackjack.R"
+            ],
+            [
+              255,
+              "getfield",
+              "Blackjack.d"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "(I)[[I",
+          "tipo_ret": "int**",
+          "n_instr": 56,
+          "apis": {},
+          "constantes": [
+            [
+              2,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              17,
+              0
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              38,
+              1
+            ],
+            [
+              47,
+              10
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "Blackjack.n"
+            ],
+            [
+              9,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              14,
+              "getfield",
+              "Blackjack.ag"
+            ],
+            [
+              21,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              26,
+              "getfield",
+              "Blackjack.ag"
+            ],
+            [
+              36,
+              "getfield",
+              "Blackjack.ag"
+            ],
+            [
+              41,
+              "getfield",
+              "Blackjack.ag"
+            ],
+            [
+              54,
+              "getfield",
+              "Blackjack.n"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 65,
+          "apis": {
+            "java/util/Random.nextInt": 1,
+            "java/lang/Math.abs": 1
+          },
+          "constantes": [
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              33,
+              0
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              46,
+              1
+            ],
+            [
+              52,
+              1
+            ],
+            [
+              62,
+              10
+            ]
+          ],
+          "chamadas": [
+            [
+              18,
+              "java/util/Random.nextInt"
+            ],
+            [
+              19,
+              "java/lang/Math.abs"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.ae"
+            ],
+            [
+              8,
+              "putfield",
+              "Blackjack.ag"
+            ],
+            [
+              17,
+              "getfield",
+              "Blackjack.case"
+            ],
+            [
+              22,
+              "putfield",
+              "Blackjack.E"
+            ],
+            [
+              26,
+              "getfield",
+              "Blackjack.E"
+            ],
+            [
+              30,
+              "getfield",
+              "Blackjack.ag"
+            ],
+            [
+              35,
+              "getfield",
+              "Blackjack.ae"
+            ],
+            [
+              37,
+              "getfield",
+              "Blackjack.E"
+            ],
+            [
+              43,
+              "getfield",
+              "Blackjack.ag"
+            ],
+            [
+              48,
+              "getfield",
+              "Blackjack.ae"
+            ],
+            [
+              50,
+              "getfield",
+              "Blackjack.E"
+            ],
+            [
+              58,
+              "getfield",
+              "Blackjack.E"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "([II)I",
+          "tipo_ret": "int",
+          "n_instr": 20,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "try",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 163,
+          "apis": {
+            "java/lang/Thread.start": 1,
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.append": 2,
+            "java/lang/StringBuffer.toString": 1
+          },
+          "constantes": [
+            [
+              1,
+              2
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              39,
+              1
+            ],
+            [
+              44,
+              1
+            ],
+            [
+              51,
+              0
+            ],
+            [
+              55,
+              1
+            ],
+            [
+              58,
+              0
+            ],
+            [
+              65,
+              1
+            ],
+            [
+              69,
+              1
+            ],
+            [
+              72,
+              1
+            ],
+            [
+              81,
+              0
+            ],
+            [
+              82,
+              -1
+            ],
+            [
+              88,
+              1
+            ],
+            [
+              89,
+              -1
+            ],
+            [
+              95,
+              0
+            ],
+            [
+              96,
+              -1
+            ],
+            [
+              102,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              147,
+              "java/lang/Thread.start"
+            ],
+            [
+              155,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              157,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              159,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              160,
+              "java/lang/StringBuffer.toString"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              11,
+              "putfield",
+              "Blackjack.n"
+            ],
+            [
+              15,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              20,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              24,
+              "getfield",
+              "Blackjack.aq"
+            ],
+            [
+              29,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              36,
+              "getfield",
+              "Blackjack.aq"
+            ],
+            [
+              41,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              48,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              53,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              62,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              67,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              78,
+              "getfield",
+              "Blackjack.aq"
+            ],
+            [
+              85,
+              "getfield",
+              "Blackjack.aq"
+            ],
+            [
+              92,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              99,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              110,
+              "getfield",
+              "Blackjack.b"
+            ],
+            [
+              115,
+              "getfield",
+              "Blackjack.b"
+            ],
+            [
+              120,
+              "getfield",
+              "Blackjack.X"
+            ],
+            [
+              125,
+              "getfield",
+              "Blackjack.X"
+            ]
+          ]
+        },
+        {
+          "nome": "new",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 68,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.append": 2,
+            "java/lang/StringBuffer.toString": 1,
+            "java/lang/Thread.start": 1
+          },
+          "constantes": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              16,
+              0
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              29,
+              0
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              53,
+              1
+            ],
+            [
+              59,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              45,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              47,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              49,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              50,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              64,
+              "java/lang/Thread.start"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              7,
+              "putfield",
+              "Blackjack.n"
+            ],
+            [
+              9,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              15,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              22,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              24,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              28,
+              "getfield",
+              "Blackjack.n"
+            ],
+            [
+              36,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              39,
+              "putfield",
+              "Blackjack.ac"
+            ],
+            [
+              54,
+              "putfield",
+              "Blackjack.aa"
+            ],
+            [
+              61,
+              "putfield",
+              "Blackjack.S"
+            ],
+            [
+              63,
+              "getfield",
+              "Blackjack.S"
+            ]
+          ]
+        },
+        {
+          "nome": "i",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "c",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 26,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              14,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              5,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              8,
+              "putfield",
+              "Blackjack.J"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack.J"
+            ],
+            [
+              17,
+              "getfield",
+              "Blackjack.J"
+            ],
+            [
+              18,
+              "putfield",
+              "Blackjack.J"
+            ]
+          ]
+        },
+        {
+          "nome": "m",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 13,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              5,
+              "putfield",
+              "Blackjack.J"
+            ]
+          ]
+        },
+        {
+          "nome": "k",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 37,
+          "apis": {},
+          "constantes": [
+            [
+              2,
+              7
+            ],
+            [
+              20,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.N"
+            ],
+            [
+              10,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              12,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              17,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              18,
+              "putfield",
+              "Blackjack.am"
+            ],
+            [
+              21,
+              "putfield",
+              "Blackjack.byte"
+            ],
+            [
+              25,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              27,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              29,
+              "putfield",
+              "Blackjack.byte"
+            ]
+          ]
+        },
+        {
+          "nome": "long",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 12,
+          "apis": {
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              8,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              5,
+              "getfield",
+              "Blackjack.int"
+            ],
+            [
+              7,
+              "getfield",
+              "Blackjack.P"
+            ]
+          ]
+        },
+        {
+          "nome": "q",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 10,
+          "apis": {
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.int"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.d"
+            ]
+          ]
+        },
+        {
+          "nome": "f",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 9,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.notifyDestroyed": 1
+          },
+          "constantes": [
+            [
+              4,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              7,
+              "javax/microedition/midlet/MIDlet.notifyDestroyed"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.S"
+            ]
+          ]
+        },
+        {
+          "nome": "char",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 128,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 3,
+            "java/lang/StringBuffer.append": 6,
+            "java/lang/StringBuffer.toString": 3
+          },
+          "constantes": [
+            [
+              16,
+              0
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              24,
+              21
+            ],
+            [
+              28,
+              2
+            ],
+            [
+              31,
+              4
+            ],
+            [
+              34,
+              10
+            ],
+            [
+              44,
+              0
+            ],
+            [
+              46,
+              21
+            ],
+            [
+              50,
+              1
+            ],
+            [
+              52,
+              21
+            ],
+            [
+              56,
+              2
+            ],
+            [
+              64,
+              2
+            ],
+            [
+              76,
+              0
+            ],
+            [
+              81,
+              1
+            ],
+            [
+              90,
+              2
+            ],
+            [
+              98,
+              5
+            ],
+            [
+              108,
+              5
+            ],
+            [
+              116,
+              2
+            ]
+          ],
+          "chamadas": [
+            [
+              61,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              66,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              68,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              69,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              87,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              92,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              94,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              95,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              113,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              118,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              120,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              121,
+              "java/lang/StringBuffer.toString"
+            ]
+          ],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "Blackjack.o"
+            ],
+            [
+              5,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              7,
+              "putfield",
+              "Blackjack.w"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              13,
+              "putfield",
+              "Blackjack.else"
+            ],
+            [
+              15,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              21,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              27,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              32,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              35,
+              "putfield",
+              "Blackjack.k"
+            ],
+            [
+              38,
+              "putfield",
+              "Blackjack.q"
+            ],
+            [
+              43,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              49,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              55,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              63,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              70,
+              "putfield",
+              "Blackjack.else"
+            ],
+            [
+              75,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              80,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              89,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              96,
+              "putfield",
+              "Blackjack.else"
+            ]
+          ]
+        },
+        {
+          "nome": "goto",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 225,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 5,
+            "java/lang/StringBuffer.append": 10,
+            "java/lang/StringBuffer.toString": 5
+          },
+          "constantes": [
+            [
+              16,
+              0
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              24,
+              21
+            ],
+            [
+              28,
+              2
+            ],
+            [
+              32,
+              21
+            ],
+            [
+              35,
+              5
+            ],
+            [
+              50,
+              2
+            ],
+            [
+              62,
+              0
+            ],
+            [
+              64,
+              21
+            ],
+            [
+              68,
+              1
+            ],
+            [
+              70,
+              21
+            ],
+            [
+              74,
+              2
+            ],
+            [
+              82,
+              2
+            ],
+            [
+              94,
+              0
+            ],
+            [
+              99,
+              1
+            ],
+            [
+              108,
+              2
+            ],
+            [
+              116,
+              4
+            ],
+            [
+              119,
+              2
+            ],
+            [
+              129,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              79,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              84,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              86,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              87,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              105,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              110,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              112,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              113,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              156,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              161,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              163,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              164,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              190,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              195,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              197,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              198,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              210,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              215,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              217,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              218,
+              "java/lang/StringBuffer.toString"
+            ]
+          ],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "Blackjack.aq"
+            ],
+            [
+              5,
+              "getfield",
+              "Blackjack.r"
+            ],
+            [
+              7,
+              "putfield",
+              "Blackjack.ap"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              13,
+              "putfield",
+              "Blackjack.m"
+            ],
+            [
+              15,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              21,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              27,
+              "getfield",
+              "Blackjack.r"
+            ],
+            [
+              31,
+              "getfield",
+              "Blackjack.au"
+            ],
+            [
+              36,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              39,
+              "putfield",
+              "Blackjack.q"
+            ],
+            [
+              41,
+              "getfield",
+              "Blackjack.J"
+            ],
+            [
+              45,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              47,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              49,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              54,
+              "putfield",
+              "Blackjack.byte"
+            ],
+            [
+              61,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              67,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              73,
+              "getfield",
+              "Blackjack.r"
+            ],
+            [
+              81,
+              "getfield",
+              "Blackjack.ap"
+            ]
+          ]
+        },
+        {
+          "nome": "else",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 56,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.append": 2,
+            "java/lang/StringBuffer.toString": 1
+          },
+          "constantes": [
+            [
+              23,
+              4
+            ],
+            [
+              26,
+              2
+            ],
+            [
+              38,
+              5
+            ],
+            [
+              45,
+              6
+            ],
+            [
+              48,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              9,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              12,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              14,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              15,
+              "java/lang/StringBuffer.toString"
+            ]
+          ],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "Blackjack.ap"
+            ],
+            [
+              5,
+              "putfield",
+              "Blackjack.C"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack.C"
+            ],
+            [
+              16,
+              "putfield",
+              "Blackjack.m"
+            ],
+            [
+              18,
+              "getfield",
+              "Blackjack.au"
+            ],
+            [
+              20,
+              "getfield",
+              "Blackjack.C"
+            ],
+            [
+              24,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              27,
+              "putfield",
+              "Blackjack.k"
+            ],
+            [
+              30,
+              "putfield",
+              "Blackjack.q"
+            ],
+            [
+              33,
+              "getfield",
+              "Blackjack.C"
+            ],
+            [
+              35,
+              "getfield",
+              "Blackjack.au"
+            ],
+            [
+              39,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              42,
+              "putfield",
+              "Blackjack.q"
+            ],
+            [
+              46,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              49,
+              "putfield",
+              "Blackjack.k"
+            ],
+            [
+              52,
+              "putfield",
+              "Blackjack.q"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "([[II)[I",
+          "tipo_ret": "int*",
+          "n_instr": 166,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              21,
+              0
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              32,
+              11
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              49,
+              1
+            ],
+            [
+              62,
+              0
+            ],
+            [
+              67,
+              1
+            ],
+            [
+              68,
+              0
+            ],
+            [
+              72,
+              0
+            ],
+            [
+              75,
+              11
+            ],
+            [
+              79,
+              1
+            ],
+            [
+              83,
+              0
+            ],
+            [
+              87,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.ar"
+            ],
+            [
+              20,
+              "putfield",
+              "Blackjack.x"
+            ],
+            [
+              25,
+              "getfield",
+              "Blackjack.H"
+            ],
+            [
+              36,
+              "getfield",
+              "Blackjack.x"
+            ],
+            [
+              39,
+              "putfield",
+              "Blackjack.x"
+            ],
+            [
+              43,
+              "getfield",
+              "Blackjack.ar"
+            ],
+            [
+              45,
+              "getfield",
+              "Blackjack.H"
+            ],
+            [
+              53,
+              "putfield",
+              "Blackjack.ar"
+            ],
+            [
+              59,
+              "getfield",
+              "Blackjack.x"
+            ],
+            [
+              64,
+              "getfield",
+              "Blackjack.ar"
+            ],
+            [
+              74,
+              "getfield",
+              "Blackjack.ar"
+            ],
+            [
+              78,
+              "getfield",
+              "Blackjack.x"
+            ],
+            [
+              89,
+              "getfield",
+              "Blackjack.ar"
+            ],
+            [
+              98,
+              "getfield",
+              "Blackjack.x"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "([I)Ljava/lang/String;",
+          "tipo_ret": "String*",
+          "n_instr": 34,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 2,
+            "java/lang/StringBuffer.append": 5,
+            "java/lang/StringBuffer.toString": 2
+          },
+          "constantes": [
+            [
+              1,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              27,
+              2
+            ]
+          ],
+          "chamadas": [
+            [
+              10,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              14,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              16,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              20,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              21,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              25,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              29,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              31,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              32,
+              "java/lang/StringBuffer.toString"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "a",
+          "desc": "([I)I",
+          "tipo_ret": "int",
+          "n_instr": 23,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              20,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "a",
+          "desc": "(I)I",
+          "tipo_ret": "int",
+          "n_instr": 7,
+          "apis": {},
+          "constantes": [
+            [
+              1,
+              21
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "null",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 13,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              4,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.k"
+            ],
+            [
+              9,
+              "putfield",
+              "Blackjack.byte"
+            ]
+          ]
+        },
+        {
+          "nome": "int",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 21,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.addCommand": 1
+          },
+          "constantes": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              8,
+              0
+            ],
+            [
+              11,
+              7
+            ]
+          ],
+          "chamadas": [
+            [
+              17,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              6,
+              "putfield",
+              "Blackjack.byte"
+            ],
+            [
+              9,
+              "putfield",
+              "Blackjack.am"
+            ],
+            [
+              12,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              14,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              16,
+              "getfield",
+              "Blackjack.at"
+            ]
+          ]
+        },
+        {
+          "nome": "s",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 38,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.append": 2,
+            "java/lang/StringBuffer.toString": 1,
+            "java/lang/Thread.start": 1
+          },
+          "constantes": [
+            [
+              1,
+              3
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              29,
+              4
+            ]
+          ],
+          "chamadas": [
+            [
+              14,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              17,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              19,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              20,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              34,
+              "java/lang/Thread.start"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "Blackjack.N"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.w"
+            ],
+            [
+              10,
+              "putfield",
+              "Blackjack.au"
+            ],
+            [
+              16,
+              "getfield",
+              "Blackjack.au"
+            ],
+            [
+              21,
+              "putfield",
+              "Blackjack.else"
+            ],
+            [
+              24,
+              "putfield",
+              "Blackjack.aa"
+            ],
+            [
+              31,
+              "putfield",
+              "Blackjack.S"
+            ],
+            [
+              33,
+              "getfield",
+              "Blackjack.S"
+            ]
+          ]
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 63,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.at"
+            ],
+            [
+              9,
+              "getfield",
+              "Blackjack.as"
+            ],
+            [
+              16,
+              "getfield",
+              "Blackjack.M"
+            ],
+            [
+              23,
+              "getfield",
+              "Blackjack.try"
+            ],
+            [
+              30,
+              "getfield",
+              "Blackjack.f"
+            ],
+            [
+              37,
+              "getfield",
+              "Blackjack.Q"
+            ],
+            [
+              44,
+              "getfield",
+              "Blackjack.char"
+            ],
+            [
+              51,
+              "getfield",
+              "Blackjack.v"
+            ],
+            [
+              58,
+              "getfield",
+              "Blackjack.ao"
+            ]
+          ]
+        },
+        {
+          "nome": "p",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.f"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.Q"
+            ]
+          ]
+        },
+        {
+          "nome": "n",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.addCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.f"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.Q"
+            ]
+          ]
+        },
+        {
+          "nome": "j",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.M"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.try"
+            ]
+          ]
+        },
+        {
+          "nome": "do",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.addCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.M"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.try"
+            ]
+          ]
+        },
+        {
+          "nome": "g",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.char"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.as"
+            ]
+          ]
+        },
+        {
+          "nome": "e",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 15,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.addCommand": 2,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.as"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.char"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack.P"
+            ]
+          ]
+        },
+        {
+          "nome": "if",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.char"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.at"
+            ]
+          ]
+        },
+        {
+          "nome": "case",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.addCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.at"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.P"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.char"
+            ]
+          ]
+        },
+        {
+          "nome": "d",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 11,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 2
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.d"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.ao"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.d"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.v"
+            ]
+          ]
+        },
+        {
+          "nome": "b",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 15,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.addCommand": 2,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              9,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.d"
+            ],
+            [
+              3,
+              "getfield",
+              "Blackjack.v"
+            ],
+            [
+              6,
+              "getfield",
+              "Blackjack.d"
+            ],
+            [
+              8,
+              "getfield",
+              "Blackjack.ao"
+            ],
+            [
+              11,
+              "getfield",
+              "Blackjack.d"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "([[I)V",
+          "tipo_ret": "void",
+          "n_instr": 33,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.append": 5,
+            "java/lang/StringBuffer.toString": 1
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              22,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              6,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              8,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              10,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              16,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              18,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              24,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              25,
+              "java/lang/StringBuffer.toString"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "r",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 46,
+          "apis": {
+            "java/lang/StringBuffer.<init>": 2,
+            "java/lang/StringBuffer.append": 9,
+            "java/lang/StringBuffer.toString": 2
+          },
+          "constantes": [
+            [
+              16,
+              0
+            ],
+            [
+              43,
+              5
+            ]
+          ],
+          "chamadas": [
+            [
+              3,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              5,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              8,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              10,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              13,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              14,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              22,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              24,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              26,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              31,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              33,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              38,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              39,
+              "java/lang/StringBuffer.toString"
+            ]
+          ],
+          "fields": [
+            [
+              7,
+              "getfield",
+              "Blackjack.ac"
+            ],
+            [
+              12,
+              "getfield",
+              "Blackjack.r"
+            ],
+            [
+              28,
+              "getfield",
+              "Blackjack.X"
+            ],
+            [
+              35,
+              "getfield",
+              "Blackjack.b"
+            ]
+          ]
+        },
+        {
+          "nome": "a",
+          "desc": "(Ljava/lang/String;)V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {
+            "java/io/PrintStream.println": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              2,
+              "java/io/PrintStream.println"
+            ]
+          ],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "System.out"
+            ]
+          ]
+        },
+        {
+          "nome": "access$000",
+          "desc": "(LBlackjack;)I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.N"
+            ]
+          ]
+        },
+        {
+          "nome": "access$100",
+          "desc": "(LBlackjack;)I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.ac"
+            ]
+          ]
+        },
+        {
+          "nome": "access$200",
+          "desc": "(LBlackjack;)[Z",
+          "tipo_ret": "int*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.X"
+            ]
+          ]
+        },
+        {
+          "nome": "access$302",
+          "desc": "(LBlackjack;[[I)[[I",
+          "tipo_ret": "int**",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.n"
+            ]
+          ]
+        },
+        {
+          "nome": "access$400",
+          "desc": "(LBlackjack;I)[[I",
+          "tipo_ret": "int**",
+          "n_instr": 4,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "access$500",
+          "desc": "(LBlackjack;)[[I",
+          "tipo_ret": "int**",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.aq"
+            ]
+          ]
+        },
+        {
+          "nome": "access$600",
+          "desc": "(LBlackjack;)I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.r"
+            ]
+          ]
+        },
+        {
+          "nome": "access$300",
+          "desc": "(LBlackjack;)[[I",
+          "tipo_ret": "int**",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.n"
+            ]
+          ]
+        },
+        {
+          "nome": "access$608",
+          "desc": "(LBlackjack;)I",
+          "tipo_ret": "int",
+          "n_instr": 8,
+          "apis": {},
+          "constantes": [
+            [
+              4,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.r"
+            ],
+            [
+              6,
+              "putfield",
+              "Blackjack.r"
+            ]
+          ]
+        },
+        {
+          "nome": "access$700",
+          "desc": "(LBlackjack;)[Z",
+          "tipo_ret": "int*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.b"
+            ]
+          ]
+        },
+        {
+          "nome": "access$802",
+          "desc": "(LBlackjack;Z)Z",
+          "tipo_ret": "int",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.aa"
+            ]
+          ]
+        },
+        {
+          "nome": "access$202",
+          "desc": "(LBlackjack;[Z)[Z",
+          "tipo_ret": "int*",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.X"
+            ]
+          ]
+        },
+        {
+          "nome": "access$900",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Command;",
+          "tipo_ret": "Command*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.as"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1000",
+          "desc": "(LBlackjack;)LBlackjack$c;",
+          "tipo_ret": "Blackjack$c*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.P"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1100",
+          "desc": "(LBlackjack;)V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "access$702",
+          "desc": "(LBlackjack;[Z)[Z",
+          "tipo_ret": "int*",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.b"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1200",
+          "desc": "(LBlackjack;)V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "access$1300",
+          "desc": "(LBlackjack;)Z",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.g"
+            ]
+          ]
+        },
+        {
+          "nome": "access$002",
+          "desc": "(LBlackjack;I)I",
+          "tipo_ret": "int",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.N"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1402",
+          "desc": "(LBlackjack;Ljava/lang/String;)Ljava/lang/String;",
+          "tipo_ret": "String*",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.q"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1500",
+          "desc": "(LBlackjack;)V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "access$1600",
+          "desc": "(LBlackjack;)V",
+          "tipo_ret": "void",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "access$1302",
+          "desc": "(LBlackjack;Z)Z",
+          "tipo_ret": "int",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.g"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1700",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 2,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "Blackjack.ab"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1800",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 2,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "Blackjack.c"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1900",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 2,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "Blackjack.t"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2000",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 2,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "Blackjack.s"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2100",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Font;",
+          "tipo_ret": "Font*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.ai"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2200",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 2,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "Blackjack.new"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2300",
+          "desc": "(LBlackjack;)[[I",
+          "tipo_ret": "int**",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.o"
+            ]
+          ]
+        },
+        {
+          "nome": "access$800",
+          "desc": "(LBlackjack;)Z",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.aa"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2400",
+          "desc": "(LBlackjack;)I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.byte"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2500",
+          "desc": "(LBlackjack;)I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.am"
+            ]
+          ]
+        },
+        {
+          "nome": "access$1400",
+          "desc": "(LBlackjack;)Ljava/lang/String;",
+          "tipo_ret": "String*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.q"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2602",
+          "desc": "(LBlackjack;I)I",
+          "tipo_ret": "int",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.L"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2702",
+          "desc": "(LBlackjack;Ljavax/microedition/lcdui/Image;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "putfield",
+              "Blackjack.do"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2700",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.do"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2600",
+          "desc": "(LBlackjack;)I",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.L"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2800",
+          "desc": "(LBlackjack;)[Ljava/lang/String;",
+          "tipo_ret": "String**",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.I"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2900",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.al"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2612",
+          "desc": "(LBlackjack;I)I",
+          "tipo_ret": "int",
+          "n_instr": 8,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.L"
+            ],
+            [
+              6,
+              "putfield",
+              "Blackjack.L"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3000",
+          "desc": "(LBlackjack;)Ljava/lang/String;",
+          "tipo_ret": "String*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.else"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3100",
+          "desc": "(LBlackjack;)Ljava/lang/String;",
+          "tipo_ret": "String*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.m"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2512",
+          "desc": "(LBlackjack;I)I",
+          "tipo_ret": "int",
+          "n_instr": 8,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              6,
+              "putfield",
+              "Blackjack.am"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2420",
+          "desc": "(LBlackjack;I)I",
+          "tipo_ret": "int",
+          "n_instr": 8,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              6,
+              "putfield",
+              "Blackjack.byte"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2520",
+          "desc": "(LBlackjack;I)I",
+          "tipo_ret": "int",
+          "n_instr": 8,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.am"
+            ],
+            [
+              6,
+              "putfield",
+              "Blackjack.am"
+            ]
+          ]
+        },
+        {
+          "nome": "access$2412",
+          "desc": "(LBlackjack;I)I",
+          "tipo_ret": "int",
+          "n_instr": 8,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blackjack.byte"
+            ],
+            [
+              6,
+              "putfield",
+              "Blackjack.byte"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3200",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.ak"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3300",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.y"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3400",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.j"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3500",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.W"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3600",
+          "desc": "(LBlackjack;)Z",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.R"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3700",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Font;",
+          "tipo_ret": "Font*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.ah"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3800",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Image;",
+          "tipo_ret": "Image*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.long"
+            ]
+          ]
+        },
+        {
+          "nome": "access$3900",
+          "desc": "()I",
+          "tipo_ret": "int",
+          "n_instr": 2,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              0,
+              "getstatic",
+              "Blackjack.G"
+            ]
+          ]
+        },
+        {
+          "nome": "access$4000",
+          "desc": "(LBlackjack;)LBlackjack$d;",
+          "tipo_ret": "Blackjack$d*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.for"
+            ]
+          ]
+        },
+        {
+          "nome": "access$4100",
+          "desc": "(LBlackjack;)Ljavax/microedition/lcdui/Display;",
+          "tipo_ret": "Display*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.int"
+            ]
+          ]
+        },
+        {
+          "nome": "access$4200",
+          "desc": "(LBlackjack;)LBlackjack$b;",
+          "tipo_ret": "Blackjack$b*",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Blackjack.d"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/midlet/MIDlet.<init>": 1,
+        "javax/microedition/lcdui/Font.getFont": 3,
+        "java/util/Random.<init>": 1,
+        "javax/microedition/lcdui/Display.getDisplay": 1,
+        "javax/microedition/lcdui/Canvas.getWidth": 1,
+        "javax/microedition/lcdui/Canvas.getHeight": 1,
+        "javax/microedition/lcdui/Command.<init>": 9,
+        "javax/microedition/lcdui/Display.setCurrent": 3,
+        "javax/microedition/lcdui/Canvas.repaint": 2,
+        "javax/microedition/lcdui/Image.createImage": 2,
+        "javax/microedition/lcdui/Image.getGraphics": 1,
+        "javax/microedition/lcdui/Graphics.drawImage": 1,
+        "java/util/Random.nextInt": 1,
+        "java/lang/Math.abs": 1,
+        "java/lang/Thread.start": 3,
+        "java/lang/StringBuffer.<init>": 17,
+        "java/lang/StringBuffer.append": 43,
+        "java/lang/StringBuffer.toString": 17,
+        "javax/microedition/midlet/MIDlet.notifyDestroyed": 1,
+        "javax/microedition/lcdui/Displayable.addCommand": 11,
+        "javax/microedition/lcdui/Displayable.removeCommand": 10,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 2,
+        "java/io/PrintStream.println": 1
+      },
+      "padroes": [
+        "MIDLET",
+        "TEM_STARTAPP",
+        "USA_IMAGE"
+      ]
+    }
+  ],
+  "n_classes": 5
+}
