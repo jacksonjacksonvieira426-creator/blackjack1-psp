@@ -290,7 +290,7 @@ int Blackjack_a_5(void* self, void* arg0);
 int Blackjack_a_6(void* self, int arg0);
 void Blackjack_null_x(void* self);
 void Blackjack_int_x(void* self);
-void Blackjack_s(void* self);
+void Blackjack_s_fn(void* self);
 void Blackjack_commandAction(void* self, void* arg0, void* arg1);
 void Blackjack_p(void* self);
 void Blackjack_n(void* self);
@@ -660,7 +660,7 @@ void Blackjack_int_x(void* self) {
     (void)s;
 }
 
-void Blackjack_s(void* self) {
+void Blackjack_s_fn(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
