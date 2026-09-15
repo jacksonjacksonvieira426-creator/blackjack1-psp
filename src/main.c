@@ -1,4 +1,4 @@
-// blackjack1 - main.c gerado por V14
+// blackjack1 - main.c gerado por V15
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,7 +16,7 @@ PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 #define SCR_W 480
 #define SCR_H 272
 
-// Tipos J2ME (auto-detectados, dedup)
+// Tipos J2ME (sem colidir com classes do projeto)
 typedef void* Alert;
 typedef void* AlertType;
 typedef void* Boolean;
@@ -99,7 +99,7 @@ void j2me_canvas_serviceRepaints(void) { }
 void j2me_gc(void) { }
 void* j2me_image_get_graphics(void* img) { return img; }
 
-// Forward typedefs
+// Forward typedefs das classes do projeto
 typedef struct Blackjack_a_s Blackjack_a;
 typedef struct Blackjack_a_s Blackjack_a_s;
 typedef struct Blackjack_b_s Blackjack_b;
@@ -270,12 +270,12 @@ void Blackjack_h(void* self);
 void Blackjack_l(void* self);
 void Blackjack_o(void* self);
 void* Blackjack_if_x(void* self, int arg0);
-void Blackjack_a(void* self);
-int Blackjack_a_2(void* self, void* arg0, int arg1);
+void Blackjack_a_2(void* self);
+int Blackjack_a_3(void* self, void* arg0, int arg1);
 void Blackjack_try_x(void* self);
 void Blackjack_new_x(void* self);
 void Blackjack_i(void* self);
-void Blackjack_c(void* self);
+void Blackjack_c_2(void* self);
 void Blackjack_m(void* self);
 void Blackjack_k(void* self);
 void Blackjack_long_x(void* self);
@@ -284,10 +284,10 @@ void Blackjack_f(void* self);
 void Blackjack_char_x(void* self);
 void Blackjack_goto_x(void* self);
 void Blackjack_else_x(void* self);
-void* Blackjack_a_3(void* self, void* arg0, int arg1);
+void* Blackjack_a_4(void* self, void* arg0, int arg1);
 void* Blackjack_if_x_2(void* self, void* arg0);
-int Blackjack_a_4(void* self, void* arg0);
-int Blackjack_a_5(void* self, int arg0);
+int Blackjack_a_5(void* self, void* arg0);
+int Blackjack_a_6(void* self, int arg0);
 void Blackjack_null_x(void* self);
 void Blackjack_int_x(void* self);
 void Blackjack_s(void* self);
@@ -300,11 +300,11 @@ void Blackjack_g(void* self);
 void Blackjack_e(void* self);
 void Blackjack_if_x_3(void* self);
 void Blackjack_case_x(void* self);
-void Blackjack_d(void* self);
-void Blackjack_b(void* self);
-void Blackjack_a_6(void* self, void* arg0);
-void Blackjack_r(void* self);
+void Blackjack_d_2(void* self);
+void Blackjack_b_2(void* self);
 void Blackjack_a_7(void* self, void* arg0);
+void Blackjack_r(void* self);
+void Blackjack_a_8(void* self, void* arg0);
 int Blackjack_access_000(void* self, void* arg0);
 int Blackjack_access_100(void* self, void* arg0);
 void* Blackjack_access_200(void* self, void* arg0);
@@ -535,13 +535,13 @@ void* Blackjack_if_x(void* self, int arg0) {
     return 0;
 }
 
-void Blackjack_a(void* self) {
+void Blackjack_a_2(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-int Blackjack_a_2(void* self, void* arg0, int arg1) {
+int Blackjack_a_3(void* self, void* arg0, int arg1) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
@@ -566,7 +566,7 @@ void Blackjack_i(void* self) {
     (void)s;
 }
 
-void Blackjack_c(void* self) {
+void Blackjack_c_2(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
@@ -620,7 +620,7 @@ void Blackjack_else_x(void* self) {
     (void)s;
 }
 
-void* Blackjack_a_3(void* self, void* arg0, int arg1) {
+void* Blackjack_a_4(void* self, void* arg0, int arg1) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
@@ -634,14 +634,14 @@ void* Blackjack_if_x_2(void* self, void* arg0) {
     return 0;
 }
 
-int Blackjack_a_4(void* self, void* arg0) {
+int Blackjack_a_5(void* self, void* arg0) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int Blackjack_a_5(void* self, int arg0) {
+int Blackjack_a_6(void* self, int arg0) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
@@ -720,19 +720,19 @@ void Blackjack_case_x(void* self) {
     (void)s;
 }
 
-void Blackjack_d(void* self) {
+void Blackjack_d_2(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void Blackjack_b(void* self) {
+void Blackjack_b_2(void* self) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void Blackjack_a_6(void* self, void* arg0) {
+void Blackjack_a_7(void* self, void* arg0) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
@@ -744,7 +744,7 @@ void Blackjack_r(void* self) {
     (void)s;
 }
 
-void Blackjack_a_7(void* self, void* arg0) {
+void Blackjack_a_8(void* self, void* arg0) {
     Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
