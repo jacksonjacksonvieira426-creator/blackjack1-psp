@@ -1,4 +1,4 @@
-// ninjakid - main.c gerado por V12
+// blackjack1 - main.c gerado por V12
 #include <pspkernel.h>
 #include <string.h>
 #include <stdlib.h>
@@ -10,7 +10,7 @@
 #include "j2me_clip.h"
 #include "j2me_runtime.h"
 
-PSP_MODULE_INFO("ninjakid", 0, 1, 0);
+PSP_MODULE_INFO("blackjack1", 0, 1, 0);
 PSP_MAIN_THREAD_ATTR(THREAD_ATTR_USER);
 
 #define SCR_W 480
@@ -76,19 +76,23 @@ void j2me_gc(void) { }
 void* j2me_image_get_graphics(void* img) { return img; }
 
 // Forward typedefs das classes do projeto
-typedef struct gamecanvas_AnimationTask_s gamecanvas_AnimationTask;
-typedef struct gamecanvas_AnimationTask_s gamecanvas_AnimationTask_s;
-typedef struct gamecanvas_s gamecanvas;
-typedef struct gamecanvas_s gamecanvas_s;
-typedef struct main_class_s main_class;
-typedef struct main_class_s main_class_s;
+typedef struct Blackjack_a_s Blackjack_a;
+typedef struct Blackjack_a_s Blackjack_a_s;
+typedef struct Blackjack_b_s Blackjack_b;
+typedef struct Blackjack_b_s Blackjack_b_s;
+typedef struct Blackjack_c_s Blackjack_c;
+typedef struct Blackjack_c_s Blackjack_c_s;
+typedef struct Blackjack_d_s Blackjack_d;
+typedef struct Blackjack_d_s Blackjack_d_s;
+typedef struct Blackjack_s Blackjack;
+typedef struct Blackjack_s Blackjack_s;
 
 // Globais
 void* _self = 0;
 void* _p1_self = 0;
 void* _p2_self = 0;
 void* _role_self = 0;
-gamecanvas* msf_mc = 0;
+Blackjack_b* msf_mc = 0;
 int Game_count = 0;
 int MapCanvas_OFFY = 96;
 int MapCanvas_OFFX = 180;
@@ -98,617 +102,1030 @@ int MapCanvas_still = 0;
 int MapCanvas_lightflag = 0;
 
 // Structs
-struct gamecanvas_AnimationTask_s {
-    gamecanvas*  this_0;
+struct Blackjack_a_s {
+    int          do_x;
+    int          a;
+    int*         if_x;
+    Blackjack*   this_0;
 };
 
-struct gamecanvas_s {
-    Image*       offimage;
-    Graphics*    offscreenbuffer;
-    DirectGraphics* DGoffscreenbuffer;
-    Image*       tileimage;
-    Graphics*    tileimagebuffer;
-    DirectGraphics* DGtileimagebuffer;
-    Image**      bobgfx;
-    int          keypressed;
-    int          game_keypressed;
-    int          screenX;
-    int          screenY;
-    main*        midlet;
-    String**     tunes;
-    int          red;
-    int          green;
-    int          blue;
+struct Blackjack_b_s {
+    int          do_x;
+    int          if_x;
+    int          a;
+    Blackjack*   this_0;
+};
+
+struct Blackjack_c_s {
+    Blackjack*   this_0;
+};
+
+struct Blackjack_d_s {
+    int          if_x;
+    int          a;
+    int          do_x;
+    Blackjack*   this_0;
+};
+
+struct Blackjack_s {
+    Command*     at;
+    Command*     as;
+    Command*     try;
+    Command*     M;
+    Command*     char_x;
+    Command*     f;
+    Command*     Q;
+    Command*     ao;
+    Command*     v;
+    Display*     int_x;
+    Blackjack$c* P;
+    Blackjack$d* for_x;
+    Blackjack$b* d;
+    Image*       ak;
+    Image*       j;
+    Image*       y;
+    Image*       W;
+    Image*       al;
+    Image*       long_x;
+    int          Y;
+    int          if_x;
+    int          ab;
+    int          c;
+    int          t;
+    int          s;
+    int          new;
+    int          G;
+    Font*        ai;
+    Font*        an;
+    Font*        ah;
+    int          R;
+    int          l;
+    int          O;
+    int          B;
+    int          h;
+    int          a;
+    int          U;
+    int          z;
+    int          p;
+    int          Z;
+    int          A;
+    int          F;
+    int          u;
+    String**     I;
+    int*         H;
+    int          af;
+    int          V;
+    int          K;
+    int          ad;
+    int          T;
+    int          aj;
+    int          void_x;
+    int          goto_x;
+    int          null;
+    int          e;
+    int          byte;
+    int          am;
+    int          J;
+    int**        aq;
+    int**        o;
+    int          r;
+    int          ac;
+    int*         ap;
+    int*         w;
+    String*      m;
+    String*      else_x;
+    int          C;
+    int          au;
+    int**        ae;
+    int**        ag;
+    Random*      case_x;
+    Blackjack$a* S;
+    int*         b;
+    int*         X;
     int          i;
-    int          mode;
-    int          textmode;
-    int          waiter;
-    RecordStore* HighScore;
-    Timer*       animTimer;
-    int          animperiod;
-    String*      playerName;
-    int          score;
-    String*      soundopt;
-    String*      musicopt;
-    String*      levelopt;
-    int          difficulty;
-    int          optioncur;
-    int          hy;
-    String**     highscoreplayers;
-    int*         highscorepoints;
-    int          arrow_x;
-    unsigned short* playerNamechars;
-    int          lives;
-    Random*      random;
-    int**        sprites;
-    int          anzahlsprites;
-    int          spritecount;
-    Image**      icons;
-    Image*       loadicon;
-    int          anzahl_icons;
-    Image*       loadfont;
-    int          fontwidth;
-    int          fontheight;
-    int          playerXpos;
-    int          playerYpos;
-    int          player;
-    int          playerdir;
-    int          lastmm;
-    int          playeranimdelay;
-    int          logo;
-    int          iecom;
-    int          titel;
-    int          door1;
-    int          door2;
-    int          explo;
-    int          extra;
-    signed char* leveldata;
-    signed char* leveldata2;
-    signed char* maskdata;
-    int          levelbreite;
-    int          levelhoehe;
-    int          levelxpos;
-    int          levelypos;
-    int          lastlevelxpos;
-    int          lastlevelypos;
-    int**        levelinfo;
-    int          level;
-    signed char  MASK_PLAYER_RELEASE;
-    signed char  MASK_WALKWAY;
-    signed char  MASK_WALL;
-    signed char  MASK_LADDER;
-    signed char  MASK_PLAYERRELEASE;
-    signed char  MASK_VASE_START;
-    signed char  MASK_VASE_END;
-    signed char  MASK_FIRERELEASE;
-    signed char  MASK_FIREDIRCHANGE;
-    signed char  MASK_PLASMARELEASE;
-    signed char  MASK_GATE;
-    signed char  MASK_DEAD;
-    int          skycolor;
-    int          faderdir;
-    int          faderypos;
-    int          fading;
-    int64_t      startTime;
-    int64_t      endTime;
-    int          gateblocks;
-    int          titelscrolldir;
-    int          titelwaiter;
-    int          scrollX;
-    int          scrollY;
-    int          softxpos;
-    int          softypos;
-    int          jumpspeed;
-    int          playerjumps;
-    int          lastlevelnr;
-    int          lastenemynr;
-    int          keyuppressed;
-    int          playerfalling;
-    int          XposOffset;
-    int          aufleiter;
-    int          explowaiter;
-    int          extrajumps;
-    int          extrajumpspeed;
-    int          extraypos;
-    signed char  keys;
-    int          diamant;
-    int          playerhit;
-    int          playerhitdir;
-    int          playerpower;
-    int          playerflashing;
-    int          playerlostlive;
-    int          hitrotate;
-    int          hitrotatedelay;
-    int          lastplayerxpos;
-    int          lastplayerypos;
-    int          lastscrollx;
-    int          lastscrolly;
-    int          exploonly;
-    int          firereleased;
-    int          playerONlift;
-    int          extralife;
-    int          swordpower;
-    int          energyfound;
-    int          levelok;
-    Sound*       sound;
-    int          pause;
-};
-
-struct main_s {
-    Display*     display;
-    gamecanvas*  screen;
-    int          started;
+    int          aa;
+    int          g;
+    int          N;
+    int          k;
+    String*      q;
+    int          L;
+    int*         D;
+    int          E;
+    int**        n;
+    Image*       do_x;
+    int          ar;
+    int          x;
 };
 
 // Prototipos
-void gamecanvas_AnimationTask_constructor(void* self, void* arg0, void* arg1);
-void gamecanvas_AnimationTask_run(void* self);
-void gamecanvas_constructor(void* self, void* arg0);
-void gamecanvas_keyPressed(void* self, int arg0);
-void gamecanvas_keyReleased(void* self, int arg0);
-void gamecanvas_DoAll(void* self);
-void gamecanvas_paint(void* self, void* arg0);
-void gamecanvas_InitGFX(void* self);
-void gamecanvas_LoadGFX(void* self);
-void gamecanvas_InitScores(void* self);
-void gamecanvas_InsertScore(void* self);
-void gamecanvas_GetHighScore(void* self);
-void gamecanvas_AddHighScore(void* self);
-void gamecanvas_InitSpriteMaster(void* self);
-int gamecanvas_bornSprite(void* self, int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8);
-void gamecanvas_MoveEnemies(void* self);
-void gamecanvas_drawSprites(void* self, void* arg0);
-void gamecanvas_hideSprite(void* self, int arg0);
-void gamecanvas_showSprite(void* self, int arg0);
-void gamecanvas_killSprite(void* self, int arg0);
-void gamecanvas_setSpritePos(void* self, int arg0, int arg1, int arg2);
-void gamecanvas_setSpriteManipulation(void* self, int arg0, int arg1);
-int gamecanvas_getSpriteManipulation(void* self, int arg0);
-int gamecanvas_getSpriteXpos(void* self, int arg0);
-int gamecanvas_getSpriteYpos(void* self, int arg0);
-void gamecanvas_setSpriteAnim(void* self, int arg0, int arg1);
-int gamecanvas_getSpriteAnim(void* self, int arg0);
-int gamecanvas_getSpriteHeight(void* self, int arg0);
-int gamecanvas_getSpriteWidth(void* self, int arg0);
-int gamecanvas_getGFXHeight(void* self, int arg0);
-int gamecanvas_getGFXWidth(void* self, int arg0);
-int gamecanvas_getHide(void* self, int arg0);
-void gamecanvas_LoadIcons(void* self, void* arg0);
-void gamecanvas_DrawText(void* self, void* arg0, void* arg1, int arg2, int arg3, int arg4);
-void gamecanvas_LoadFont(void* self, void* arg0);
-void gamecanvas_LoadLevel(void* self, void* arg0);
-void gamecanvas_DrawIcons(void* self, int arg0);
-void gamecanvas_MakeSprites(void* self);
-void gamecanvas_DrawIt(void* self, int arg0, int arg1, int arg2, int arg3);
-void gamecanvas_Scroll(void* self, int arg0, int arg1);
-int gamecanvas_GetIcon(void* self, int arg0, int arg1);
-void gamecanvas_SetIcon(void* self, int arg0, int arg1, int arg2, int arg3, int arg4);
-int gamecanvas_checkkollision(void* self, int arg0, int arg1, int arg2, int arg3);
-void gamecanvas_GetLevelInfo(void* self, int arg0);
-void gamecanvas_MovePlayer(void* self, int arg0);
-void gamecanvas_checkHit(void* self);
-void gamecanvas_JumpPlayer(void* self);
-void gamecanvas_FallPlayer(void* self);
-void gamecanvas_ExtraJump(void* self);
-void gamecanvas_openGate(void* self, int arg0, int arg1);
-void gamecanvas_titelscroll(void* self);
-void gamecanvas_PlaySound(void* self, int arg0);
-void gamecanvas_StopSound(void* self);
-void* gamecanvas_convertHexToBinary(void* self, void* arg0);
-void gamecanvas_ReborneEnemy(void* self, int arg0);
-void gamecanvas_PlayerDead(void* self);
-void gamecanvas_resetdata(void* self);
-void gamecanvas_GetExtra(void* self);
-void main_constructor(void* self);
-void main_startApp(void* self);
-void main_pauseApp(void* self);
-void main_destroyApp(void* self, int arg0);
-void main_hideNotify(void* self);
-void main_showNotify(void* self);
-void main_exitRequested(void* self);
+void Blackjack_a_constructor(void* self, void* arg0, int arg1);
+void Blackjack_a_run(void* self);
+void Blackjack_a_a(void* self, int64_t arg0);
+void Blackjack_b_constructor(void* self, void* arg0);
+void Blackjack_b_paint(void* self, void* arg0);
+void Blackjack_b_keyPressed(void* self, int arg0);
+void Blackjack_c_constructor(void* self, void* arg0);
+void Blackjack_c_paint(void* self, void* arg0);
+void Blackjack_c_a(void* self, void* arg0, void* arg1, int arg2, void* arg3, int arg4);
+void Blackjack_c_a_2(void* self, void* arg0, void* arg1, int arg2, int arg3);
+void Blackjack_c_a_3(void* self, void* arg0, int arg1, int arg2);
+void Blackjack_c_a_4(void* self, void* arg0, int arg1, int arg2, void* arg3);
+void Blackjack_c_keyPressed(void* self, int arg0);
+void* Blackjack_c_a_5(void* self, void* arg0, int arg1);
+void Blackjack_d_constructor(void* self, void* arg0);
+void Blackjack_d_paint(void* self, void* arg0);
+void Blackjack_d_keyPressed(void* self, int arg0);
+void Blackjack_constructor(void* self);
+void Blackjack_startApp(void* self);
+void Blackjack_pauseApp(void* self);
+void Blackjack_destroyApp(void* self, int arg0);
+void Blackjack_for_x(void* self);
+void Blackjack_byte(void* self);
+void Blackjack_void_x(void* self);
+void Blackjack_h(void* self);
+void Blackjack_l(void* self);
+void Blackjack_o(void* self);
+void* Blackjack_if_x(void* self, int arg0);
+void Blackjack_a(void* self);
+int Blackjack_a_2(void* self, void* arg0, int arg1);
+void Blackjack_try(void* self);
+void Blackjack_new(void* self);
+void Blackjack_i(void* self);
+void Blackjack_c(void* self);
+void Blackjack_m(void* self);
+void Blackjack_k(void* self);
+void Blackjack_long_x(void* self);
+void Blackjack_q(void* self);
+void Blackjack_f(void* self);
+void Blackjack_char_x(void* self);
+void Blackjack_goto_x(void* self);
+void Blackjack_else_x(void* self);
+void* Blackjack_a_3(void* self, void* arg0, int arg1);
+void* Blackjack_if_x_2(void* self, void* arg0);
+int Blackjack_a_4(void* self, void* arg0);
+int Blackjack_a_5(void* self, int arg0);
+void Blackjack_null(void* self);
+void Blackjack_int_x(void* self);
+void Blackjack_s(void* self);
+void Blackjack_commandAction(void* self, void* arg0, void* arg1);
+void Blackjack_p(void* self);
+void Blackjack_n(void* self);
+void Blackjack_j(void* self);
+void Blackjack_do_x(void* self);
+void Blackjack_g(void* self);
+void Blackjack_e(void* self);
+void Blackjack_if_x_3(void* self);
+void Blackjack_case_x(void* self);
+void Blackjack_d(void* self);
+void Blackjack_b(void* self);
+void Blackjack_a_6(void* self, void* arg0);
+void Blackjack_r(void* self);
+void Blackjack_a_7(void* self, void* arg0);
+int Blackjack_access_000(void* self, void* arg0);
+int Blackjack_access_100(void* self, void* arg0);
+void* Blackjack_access_200(void* self, void* arg0);
+void* Blackjack_access_302(void* self, void* arg0, void* arg1);
+void* Blackjack_access_400(void* self, void* arg0, int arg1);
+void* Blackjack_access_500(void* self, void* arg0);
+int Blackjack_access_600(void* self, void* arg0);
+void* Blackjack_access_300(void* self, void* arg0);
+int Blackjack_access_608(void* self, void* arg0);
+void* Blackjack_access_700(void* self, void* arg0);
+int Blackjack_access_802(void* self, void* arg0, int arg1);
+void* Blackjack_access_202(void* self, void* arg0, void* arg1);
+void* Blackjack_access_900(void* self, void* arg0);
+void* Blackjack_access_1000(void* self, void* arg0);
+void Blackjack_access_1100(void* self, void* arg0);
+void* Blackjack_access_702(void* self, void* arg0, void* arg1);
+void Blackjack_access_1200(void* self, void* arg0);
+int Blackjack_access_1300(void* self, void* arg0);
+int Blackjack_access_002(void* self, void* arg0, int arg1);
+void* Blackjack_access_1402(void* self, void* arg0, void* arg1);
+void Blackjack_access_1500(void* self, void* arg0);
+void Blackjack_access_1600(void* self, void* arg0);
+int Blackjack_access_1302(void* self, void* arg0, int arg1);
+int Blackjack_access_1700(void* self);
+int Blackjack_access_1800(void* self);
+int Blackjack_access_1900(void* self);
+int Blackjack_access_2000(void* self);
+void* Blackjack_access_2100(void* self, void* arg0);
+int Blackjack_access_2200(void* self);
+void* Blackjack_access_2300(void* self, void* arg0);
+int Blackjack_access_800(void* self, void* arg0);
+int Blackjack_access_2400(void* self, void* arg0);
+int Blackjack_access_2500(void* self, void* arg0);
+void* Blackjack_access_1400(void* self, void* arg0);
+int Blackjack_access_2602(void* self, void* arg0, int arg1);
+void* Blackjack_access_2702(void* self, void* arg0, void* arg1);
+void* Blackjack_access_2700(void* self, void* arg0);
+int Blackjack_access_2600(void* self, void* arg0);
+void* Blackjack_access_2800(void* self, void* arg0);
+void* Blackjack_access_2900(void* self, void* arg0);
+int Blackjack_access_2612(void* self, void* arg0, int arg1);
+void* Blackjack_access_3000(void* self, void* arg0);
+void* Blackjack_access_3100(void* self, void* arg0);
+int Blackjack_access_2512(void* self, void* arg0, int arg1);
+int Blackjack_access_2420(void* self, void* arg0, int arg1);
+int Blackjack_access_2520(void* self, void* arg0, int arg1);
+int Blackjack_access_2412(void* self, void* arg0, int arg1);
+void* Blackjack_access_3200(void* self, void* arg0);
+void* Blackjack_access_3300(void* self, void* arg0);
+void* Blackjack_access_3400(void* self, void* arg0);
+void* Blackjack_access_3500(void* self, void* arg0);
+int Blackjack_access_3600(void* self, void* arg0);
+void* Blackjack_access_3700(void* self, void* arg0);
+void* Blackjack_access_3800(void* self, void* arg0);
+int Blackjack_access_3900(void* self);
+void* Blackjack_access_4000(void* self, void* arg0);
+void* Blackjack_access_4100(void* self, void* arg0);
+void* Blackjack_access_4200(void* self, void* arg0);
 
 // Implementacoes
-void gamecanvas_AnimationTask_constructor(void* self, void* arg0, void* arg1) {
-    gamecanvas_AnimationTask* s = (gamecanvas_AnimationTask*)self;
+void Blackjack_a_constructor(void* self, void* arg0, int arg1) {
+    Blackjack_a* s = (Blackjack_a*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_AnimationTask_run(void* self) {
-    gamecanvas_AnimationTask* s = (gamecanvas_AnimationTask*)self;
+void Blackjack_a_run(void* self) {
+    Blackjack_a* s = (Blackjack_a*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_constructor(void* self, void* arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_a_a(void* self, int64_t arg0) {
+    Blackjack_a* s = (Blackjack_a*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_keyPressed(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_b_constructor(void* self, void* arg0) {
+    Blackjack_b* s = (Blackjack_b*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_keyReleased(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_b_paint(void* self, void* arg0) {
+    Blackjack_b* s = (Blackjack_b*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_DoAll(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_b_keyPressed(void* self, int arg0) {
+    Blackjack_b* s = (Blackjack_b*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_paint(void* self, void* arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_c_constructor(void* self, void* arg0) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_InitGFX(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_c_paint(void* self, void* arg0) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_LoadGFX(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_c_a(void* self, void* arg0, void* arg1, int arg2, void* arg3, int arg4) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_InitScores(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_c_a_2(void* self, void* arg0, void* arg1, int arg2, int arg3) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_InsertScore(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_c_a_3(void* self, void* arg0, int arg1, int arg2) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_GetHighScore(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_c_a_4(void* self, void* arg0, int arg1, int arg2, void* arg3) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_AddHighScore(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_c_keyPressed(void* self, int arg0) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_InitSpriteMaster(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-int gamecanvas_bornSprite(void* self, int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {
-    gamecanvas* s = (gamecanvas*)self;
+void* Blackjack_c_a_5(void* self, void* arg0, int arg1) {
+    Blackjack_c* s = (Blackjack_c*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-void gamecanvas_MoveEnemies(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_d_constructor(void* self, void* arg0) {
+    Blackjack_d* s = (Blackjack_d*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_drawSprites(void* self, void* arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_d_paint(void* self, void* arg0) {
+    Blackjack_d* s = (Blackjack_d*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_hideSprite(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_d_keyPressed(void* self, int arg0) {
+    Blackjack_d* s = (Blackjack_d*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_showSprite(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_constructor(void* self) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_killSprite(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_startApp(void* self) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_setSpritePos(void* self, int arg0, int arg1, int arg2) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_pauseApp(void* self) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_setSpriteManipulation(void* self, int arg0, int arg1) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_destroyApp(void* self, int arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-int gamecanvas_getSpriteManipulation(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_for_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_byte(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_void_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_h(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_l(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_o(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void* Blackjack_if_x(void* self, int arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int gamecanvas_getSpriteXpos(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_a(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+int Blackjack_a_2(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int gamecanvas_getSpriteYpos(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_try(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_new(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_i(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_c(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_m(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_k(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_long_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_q(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_f(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_char_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_goto_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_else_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void* Blackjack_a_3(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-void gamecanvas_setSpriteAnim(void* self, int arg0, int arg1) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-int gamecanvas_getSpriteAnim(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void* Blackjack_if_x_2(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int gamecanvas_getSpriteHeight(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+int Blackjack_a_4(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int gamecanvas_getSpriteWidth(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+int Blackjack_a_5(void* self, int arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int gamecanvas_getGFXHeight(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_null(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_int_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_s(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_commandAction(void* self, void* arg0, void* arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_p(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_n(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_j(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_do_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_g(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_e(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_if_x_3(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_case_x(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_d(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_b(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_a_6(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_r(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+void Blackjack_a_7(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return;
+    (void)s;
+}
+
+int Blackjack_access_000(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int gamecanvas_getGFXWidth(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+int Blackjack_access_100(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-int gamecanvas_getHide(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void* Blackjack_access_200(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-void gamecanvas_LoadIcons(void* self, void* arg0) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_DrawText(void* self, void* arg0, void* arg1, int arg2, int arg3, int arg4) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_LoadFont(void* self, void* arg0) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_LoadLevel(void* self, void* arg0) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_DrawIcons(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_MakeSprites(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_DrawIt(void* self, int arg0, int arg1, int arg2, int arg3) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_Scroll(void* self, int arg0, int arg1) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-int gamecanvas_GetIcon(void* self, int arg0, int arg1) {
-    gamecanvas* s = (gamecanvas*)self;
+void* Blackjack_access_302(void* self, void* arg0, void* arg1) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-void gamecanvas_SetIcon(void* self, int arg0, int arg1, int arg2, int arg3, int arg4) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-int gamecanvas_checkkollision(void* self, int arg0, int arg1, int arg2, int arg3) {
-    gamecanvas* s = (gamecanvas*)self;
+void* Blackjack_access_400(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-void gamecanvas_GetLevelInfo(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_MovePlayer(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_checkHit(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_JumpPlayer(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_FallPlayer(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_ExtraJump(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_openGate(void* self, int arg0, int arg1) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_titelscroll(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_PlaySound(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void gamecanvas_StopSound(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
-    if (!s) return;
-    (void)s;
-}
-
-void* gamecanvas_convertHexToBinary(void* self, void* arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+void* Blackjack_access_500(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return 0;
     (void)s;
     return 0;
 }
 
-void gamecanvas_ReborneEnemy(void* self, int arg0) {
-    gamecanvas* s = (gamecanvas*)self;
+int Blackjack_access_600(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_300(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_608(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_700(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_802(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_202(void* self, void* arg0, void* arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_900(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_1000(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void Blackjack_access_1100(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_PlayerDead(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void* Blackjack_access_702(void* self, void* arg0, void* arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void Blackjack_access_1200(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_resetdata(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+int Blackjack_access_1300(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_002(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_1402(void* self, void* arg0, void* arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void Blackjack_access_1500(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void gamecanvas_GetExtra(void* self) {
-    gamecanvas* s = (gamecanvas*)self;
+void Blackjack_access_1600(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
     if (!s) return;
     (void)s;
 }
 
-void main_constructor(void* self) {
-    main* s = (main*)self;
-    if (!s) return;
+int Blackjack_access_1302(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
     (void)s;
+    return 0;
 }
 
-void main_startApp(void* self) {
-    main* s = (main*)self;
-    if (!s) return;
+int Blackjack_access_1700(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
     (void)s;
+    return 0;
 }
 
-void main_pauseApp(void* self) {
-    main* s = (main*)self;
-    if (!s) return;
+int Blackjack_access_1800(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
     (void)s;
+    return 0;
 }
 
-void main_destroyApp(void* self, int arg0) {
-    main* s = (main*)self;
-    if (!s) return;
+int Blackjack_access_1900(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
     (void)s;
+    return 0;
 }
 
-void main_hideNotify(void* self) {
-    main* s = (main*)self;
-    if (!s) return;
+int Blackjack_access_2000(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
     (void)s;
+    return 0;
 }
 
-void main_showNotify(void* self) {
-    main* s = (main*)self;
-    if (!s) return;
+void* Blackjack_access_2100(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
     (void)s;
+    return 0;
 }
 
-void main_exitRequested(void* self) {
-    main* s = (main*)self;
-    if (!s) return;
+int Blackjack_access_2200(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
     (void)s;
+    return 0;
+}
+
+void* Blackjack_access_2300(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_800(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2400(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2500(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_1400(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2602(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_2702(void* self, void* arg0, void* arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_2700(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2600(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_2800(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_2900(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2612(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3000(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3100(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2512(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2420(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2520(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_2412(void* self, void* arg0, int arg1) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3200(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3300(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3400(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3500(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_3600(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3700(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_3800(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+int Blackjack_access_3900(void* self) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_4000(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_4100(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
+}
+
+void* Blackjack_access_4200(void* self, void* arg0) {
+    Blackjack* s = (Blackjack*)self;
+    if (!s) return 0;
+    (void)s;
+    return 0;
 }
 
 int main(void) {
@@ -716,7 +1133,7 @@ int main(void) {
     j2me_input_init();
     j2me_random_init();
 
-    gamecanvas* mc = (gamecanvas*)calloc(1, sizeof(gamecanvas));
+    Blackjack_b* mc = (Blackjack_b*)calloc(1, sizeof(Blackjack_b));
     _self = mc;
     msf_mc = mc;
 
